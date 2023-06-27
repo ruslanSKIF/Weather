@@ -10,13 +10,13 @@ async function loadWeather (e) {
   </div>`
 
   
-  const currentWeatherServer = 'https://api.openweathermap.org/data/2.5/weather?q=Kryvyi+Rih&units=metric&lang=uk&appid=69c3554796ff3bf11357a6ad0d80dfaf'
+  const currentWeatherServer = 'https://api.openweathermap.org/data/2.5/weather?q=Kryvyi+Rih&units=metric&lang=uk&appid=1'
   const currentResponse = await fetch(currentWeatherServer, {
     method: 'GET',
   });
   const currentWeatherResponse = await currentResponse.json();
 
-  const forecastWeatherServer = 'https://api.openweathermap.org/data/2.5/forecast?q=Kryvyi+Rih&units=metric&lang=uk&appid=69c3554796ff3bf11357a6ad0d80dfaf';
+  const forecastWeatherServer = 'https://api.openweathermap.org/data/2.5/forecast?q=Kryvyi+Rih&units=metric&lang=uk&appid=1';
   const forecastResponse = await fetch(forecastWeatherServer, {
     method: 'GET',
   });
